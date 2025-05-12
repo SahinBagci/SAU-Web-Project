@@ -1,0 +1,33 @@
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #0689f55e; 
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #0689f5 !important;  
+}
+
+.navbar-nav .nav-link.active:hover {
+  background-color: #0689f5 !important;
+}
+
+.navbar-brand:hover {
+  color: #0689f5b7;
+}
+
+.navbar .social-icon {
+  padding: 10px;
+  border-radius: 25%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navbar .social-icon:hover {
+  background-color: #0689f55e;
+  transform: scale(1.1);
+}
