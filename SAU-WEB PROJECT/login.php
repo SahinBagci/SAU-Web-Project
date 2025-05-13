@@ -1,22 +1,19 @@
 <?php
-// Formdan gelen verileri al
+
 $numara = $_POST['numara'] ?? '';
 $sifre = $_POST['sifre'] ?? '';
 $sadeceNumara = '';
 
-// Eğer form submit edilirse işlem başlat
 if (isset($_POST['submit'])) {
 
-    // 1. Alanlar boş mu kontrol et
     if ($numara == "" || $sifre == "") {
-        // Error message
+
         echo "<script>alert('Lütfen tüm alanları doldurun.'); window.location.href='login.html';</script>";
         exit;
     }
 
-    // 2. Öğrenci numarası ve şifreyi kontrol et
-    if ($numara == "g231210066@sakarya.edu.tr" && password_verify($sifre, '$2y$10$VHtq8KdjFv8DAJnkD0A.r.eUtSxuCUE2j.OJwvWdfJl9xjmtwgh6y')) { // Assume hashed password
-        $sadeceNumara = substr($numara, 0, 10); // Numara kısmını al
+    if ($numara == "g231210066@sakarya.edu.tr" && $sifre == "g231210066") { 
+        $sadeceNumara = substr($numara, 0, 10);
     } else {
         echo "<script>alert('Geçersiz kullanıcı adı veya şifre.'); window.location.href='login.html';</script>";
         exit;
