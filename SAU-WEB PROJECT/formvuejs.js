@@ -34,6 +34,7 @@ createApp({
         return;
       }
 
+      // URL parametreleri olarak form verilerini oluştur
       const params = new URLSearchParams({
         name: this.name,
         surname: this.surname,
@@ -43,6 +44,7 @@ createApp({
         gender: this.gender
       }).toString();
 
+      // formSonuc.html sayfasına yönlendir
       window.location.href = 'formsonuc.html?' + params;
     }
   }

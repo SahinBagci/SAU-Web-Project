@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Yönlendirme
     const params = new URLSearchParams({
       name,
       surname,
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form');
-  const btnJS = document.querySelector('button.btn-success'); // JS Gönder butonu
+  const btnJS = document.querySelector('button.btn-success'); 
 
   btnJS.addEventListener('click', function() {
     const name = document.getElementById('name').value.trim();
@@ -65,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    // Cinsiyet kontrolü
     const genderValue = gender ? gender.value : '';
 
     const params = new URLSearchParams({
